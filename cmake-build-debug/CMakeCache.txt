@@ -107,7 +107,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/STRUCTURES-AND-ALGORITHMS
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Structures_and_algorithms
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/ld.exe
@@ -151,22 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=STRUCTURES-AND-ALGORITHMS
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.1.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+CMAKE_PROJECT_NAME:STATIC=Structures_and_algorithms
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/ranlib.exe
@@ -249,13 +234,13 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/str
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-STRUCTURES-AND-ALGORITHMS_BINARY_DIR:STATIC=C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug
+Structures_and_algorithms_BINARY_DIR:STATIC=C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug
 
 //Value Computed by CMake
-STRUCTURES-AND-ALGORITHMS_IS_TOP_LEVEL:STATIC=ON
+Structures_and_algorithms_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-STRUCTURES-AND-ALGORITHMS_SOURCE_DIR:STATIC=C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms
+Structures_and_algorithms_SOURCE_DIR:STATIC=C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms
 
 
 ########################

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: STRUCTURES-AND-ALGORITHMS
+# Project: Structures_and_algorithms
 # Configurations: Debug
 # =============================================================================
 
@@ -41,40 +41,40 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target STRUCTURES-AND-ALGORITHMS
+# Object build statements for EXECUTABLE target Structures_and_algorithms
 
 
 #############################################
-# Order-only phony target for STRUCTURES-AND-ALGORITHMS
+# Order-only phony target for Structures_and_algorithms
 
-build cmake_object_order_depends_target_STRUCTURES-AND-ALGORITHMS: phony || CMakeFiles/STRUCTURES-AND-ALGORITHMS.dir
+build cmake_object_order_depends_target_Structures_and_algorithms: phony || CMakeFiles/Structures_and_algorithms.dir
 
-build CMakeFiles/STRUCTURES-AND-ALGORITHMS.dir/main.cpp.obj: CXX_COMPILER__STRUCTURES-AND-ALGORITHMS_Debug C$:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/main.cpp || cmake_object_order_depends_target_STRUCTURES-AND-ALGORITHMS
-  DEP_FILE = CMakeFiles\STRUCTURES-AND-ALGORITHMS.dir\main.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\STRUCTURES-AND-ALGORITHMS.dir
-  OBJECT_FILE_DIR = CMakeFiles\STRUCTURES-AND-ALGORITHMS.dir
-  TARGET_COMPILE_PDB = CMakeFiles\STRUCTURES-AND-ALGORITHMS.dir\
-  TARGET_PDB = STRUCTURES-AND-ALGORITHMS.pdb
+build CMakeFiles/Structures_and_algorithms.dir/main.cpp.obj: CXX_COMPILER__Structures_and_algorithms_Debug C$:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/main.cpp || cmake_object_order_depends_target_Structures_and_algorithms
+  DEP_FILE = CMakeFiles\Structures_and_algorithms.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Structures_and_algorithms.dir
+  OBJECT_FILE_DIR = CMakeFiles\Structures_and_algorithms.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Structures_and_algorithms.dir\
+  TARGET_PDB = Structures_and_algorithms.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target STRUCTURES-AND-ALGORITHMS
+# Link build statements for EXECUTABLE target Structures_and_algorithms
 
 
 #############################################
-# Link the executable STRUCTURES-AND-ALGORITHMS.exe
+# Link the executable Structures_and_algorithms.exe
 
-build STRUCTURES-AND-ALGORITHMS.exe: CXX_EXECUTABLE_LINKER__STRUCTURES-AND-ALGORITHMS_Debug CMakeFiles/STRUCTURES-AND-ALGORITHMS.dir/main.cpp.obj
+build Structures_and_algorithms.exe: CXX_EXECUTABLE_LINKER__Structures_and_algorithms_Debug CMakeFiles/Structures_and_algorithms.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\STRUCTURES-AND-ALGORITHMS.dir
+  OBJECT_DIR = CMakeFiles\Structures_and_algorithms.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\STRUCTURES-AND-ALGORITHMS.dir\
-  TARGET_FILE = STRUCTURES-AND-ALGORITHMS.exe
-  TARGET_IMPLIB = libSTRUCTURES-AND-ALGORITHMS.dll.a
-  TARGET_PDB = STRUCTURES-AND-ALGORITHMS.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\Structures_and_algorithms.dir\
+  TARGET_FILE = Structures_and_algorithms.exe
+  TARGET_IMPLIB = libStructures_and_algorithms.dll.a
+  TARGET_PDB = Structures_and_algorithms.pdb
 
 
 #############################################
@@ -102,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build STRUCTURES-AND-ALGORITHMS: phony STRUCTURES-AND-ALGORITHMS.exe
+build Structures_and_algorithms: phony Structures_and_algorithms.exe
 
 # =============================================================================
 # Folder targets.
@@ -112,12 +112,7 @@ build STRUCTURES-AND-ALGORITHMS: phony STRUCTURES-AND-ALGORITHMS.exe
 #############################################
 # Folder: C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug
 
-build all: phony STRUCTURES-AND-ALGORITHMS.exe
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony Structures_and_algorithms.exe
 
 # =============================================================================
 # Built-in targets
