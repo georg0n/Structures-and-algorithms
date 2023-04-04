@@ -1,0 +1,3 @@
+C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug/CMakeFiles/STRUCTURES-AND-ALGORITHMS.dir
+C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/George/Desktop/GitHub/Siaod/Structures-and-algorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
