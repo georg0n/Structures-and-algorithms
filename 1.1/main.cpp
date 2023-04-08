@@ -191,7 +191,7 @@ void IndividTask() {
             cout << endl;
         }
 
-        return 0;
+
 
     }
 }
