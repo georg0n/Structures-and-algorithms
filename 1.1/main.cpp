@@ -2,6 +2,9 @@
 #include <ctime>
 using namespace std;
 
+
+void MainTask();
+void IndividTask();
 void delFirstMetod(int* x, int n, int key);
 void delOtherMetod(int* x, int n, int key);
 void print_arr(int* mass, int len, string name);
@@ -10,10 +13,21 @@ void copy(int* tocopy, int copy_len, int final_len);
 
 int main()
 {
-
+    setlocale(LC_ALL, "Russian");
+    int changeTask;
+    std::cout<<"Введите номер задания (1-2): "<< std::endl;
+    std::cin>>changeTask;
+    switch (changeTask) {
+        case 1:
+            MainTask();
+            break;
+        case 2:
+            IndividTask();
+            break;
+    }
 }
 
-int MainTask()
+void MainTask()
 {
     int mass;
     setlocale(LC_ALL, "Russian");
@@ -142,42 +156,42 @@ void copy(int* tocopy, int copy_len, int final_len)
 
 //Задание 2
 
-//int IndividTask() {
-//    setlocale(LC_ALL, "rus");
-//    const int n = 3;
-//    int i, j, k;
-//    double a[n][n];
-//    double b[n][n];
-//    double c[n][n];
-//
-//    cout << "матрица а" << endl;
-//    for (i = 0; i < n; i++) {
-//        for (j = 0; j < n; j++) {
-//            cin >> a[i][j];
-//        }
-//
-//    }
-//
-//    cout << "матрица b" << endl;
-//    for (i = 0; i < n; i++) {
-//        for (j = 0; j < n; j++) {
-//            cin >> b[i][j];
-//        }
-//
-//    }
-//
-//    cout << "матрица c = a*b" << endl;
-//    for (i = 0; i < n; i++) {
-//        for (j = 0; j < n; j++) {
-//            c[i][j] = 0;
-//            for (k = 0; k < n; k++) {
-//                c[i][j] += a[i][k] * b[k][j];
-//                cout << c[i][j] << " ";
-//            }
-//            cout << endl;
-//        }
-//
-//        return 0;
-//
-//    }
-//}
+void IndividTask() {
+    setlocale(LC_ALL, "rus");
+    const int n = 3;
+    int i, j, k;
+    double a[n][n];
+    double b[n][n];
+    double c[n][n];
+
+    cout << "матрица а" << endl;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            cin >> a[i][j];
+        }
+
+    }
+
+    cout << "матрица b" << endl;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            cin >> b[i][j];
+        }
+
+    }
+
+    cout << "матрица c = a*b" << endl;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            c[i][j] = 0;
+            for (k = 0; k < n; k++) {
+                c[i][j] += a[i][k] * b[k][j];
+                cout << c[i][j] << " ";
+            }
+            cout << endl;
+        }
+
+        return 0;
+
+    }
+}
