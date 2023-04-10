@@ -22,12 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0da71d06-683f-4d6a-889d-cfad7291f051" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.1/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/1.1/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.1/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/1.1/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.1/cmake-build-debug/1_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/1.1/cmake-build-debug/1_1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.1/cmake-build-debug/CMakeFiles/1_1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/1.1/cmake-build-debug/CMakeFiles/1_1.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1.1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/1.1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1.1/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,8 @@
       <updated>1680954377091</updated>
       <workItem from="1680954378694" duration="7000" />
       <workItem from="1681131312034" duration="6539000" />
-      <workItem from="1681148673540" duration="462000" />
+      <workItem from="1681148673540" duration="1790000" />
+      <workItem from="1681153820249" duration="24000" />
     </task>
     <servers />
   </component>
