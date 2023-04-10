@@ -164,37 +164,18 @@ void copy(int* tocopy, int copy_len, int final_len)
 
 int IndividTask() {
 
-    //double A[N][N], B[N][N], C[N][N];
-    int n, i, j, k;
-    cout << "Enter count of arr columns: " << endl;
-    cin >> n;
-    int** A = NULL;
-    int** B = NULL;
-    int** C = NULL;
-
-    A = new int*[n];
-    B = new int*[n];
-    C = new int*[n];
-
-    for (i = 0; i < n; i++)
-    {
-        A[i] = new int[n];
-    }
-    for (i = 0; i < n; i++)
-    {
-        B[i] = new int[n];
-    }
-    for (i = 0; i < n; i++)
-    {
-        C[i] = new int[n];
-    }
+   int const N = 3;
+    double A[N][N], B[N][N], C[N][N];
+    int i, j, k;
 
 
 
+
+    cout << "-------------------------------------------------------------" << endl;
     cout << "Matrix A" << endl;
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < n; j++)
+    for (i = 0; i < N; i++)
+     {
+        for (j = 0; j < N; j++)
         {
             cin >> A[i][j];
         }
@@ -202,9 +183,9 @@ int IndividTask() {
     cout << "-------------------------------------------------------------" << endl;
 
     cout << "Matrix B" << endl;
-    for (i = 0; i < n; i++)
+    for (i = 0; i < N; i++)
     {
-        for (j = 0; j < n; j++)
+        for (j = 0; j < N; j++)
         {
             cin >> B[i][j];
         }
@@ -214,32 +195,30 @@ int IndividTask() {
 
     cout << "Matrix C = A * B" << endl;
 
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < n; j++)
-        {
+    for (i = 0; i < N; i++) {
+
+        for (j = 0; j < N; j++) {
+
             C[i][j] = 0;
-            for (k = 0; k < n; k++)
-            {
+            for (k = 0; k < N; k++)
+
                 C[i][j] += A[i][k] * B[k][j];
-                cout << C[i][j] << " ";
-            }
-            cout << endl;
+            cout << C[i][j] << " ";
         }
+        cout << endl;
     }
-
-    for (i = 0; i < n; i++)
-    {
-        delete[] A[i];
-        delete[] B[i];
-        delete[] C[i];
-    }
-
-    delete[]A;
-    delete[]B;
-    delete[]C;
 
     return 0;
+   }
 
 
-}
+
+
+
+
+
+
+
+
+
+
