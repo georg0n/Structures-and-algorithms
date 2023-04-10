@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <chrono>
 
 
 void FirstTask();
@@ -35,6 +36,7 @@ int main()
 
 void FirstTask()
 {
+
     int n; // count of elements
 
     cout << "Insert count of arr elements: " << endl;
@@ -44,18 +46,25 @@ void FirstTask()
     srand(time(NULL)); // randomize
     for (int i = 0; i < n; i++)
     {
-        int num = rand() %20 + 1;
+        int num = rand() % n + 1;
         arr[i] = num;
     }
-    unsigned int t1 = clock();
-    BubbleSort(arr, n);
-    unsigned int t2 = clock();
+
+    cout << "Before sort \n -----------------------------" << endl;
+
     for (int i = 0; i < n; i++)
     {
         cout << "a [" << i << "] = " << arr[i] << endl;
     }
-    unsigned int final_time = t2 - t1;
-    cout << "Time = " << final_time << endl;
+    cout << "After sort \n ------------------------------" << endl;
+    auto start = chrono::steady_clock::now();
+    BubbleSort(arr, n);
+    for (int i = 0; i < n; i++)
+    {
+        cout << "a [" << i << "] = " << arr[i] << endl;
+    }
+    auto end = chrono::steady_clock::now();
+    cout << "Elapsed time in milliseconds: " << chrono::duration_cast<chrono::milliseconds>(end-start).count();
 
 
 }
