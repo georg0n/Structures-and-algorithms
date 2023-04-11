@@ -65,12 +65,6 @@ void FirstTask()
         int num = rand() % n + 1;
         arr[i] = num;
     }
-
-    //Reverse(arr, n);
-
-
-
-    ReversedBubble(arr, n);
         auto start = chrono::steady_clock::now();
         BubbleSort(arr, n);
         auto end = chrono::steady_clock::now();
@@ -126,12 +120,17 @@ void SecondTask()
     }
 
 
-
-
-    InsertionSort(arr, n);
     BubbleSort(arr, n);
+    //ReversedBubble(arr, n);
+
+
+    auto start= chrono::steady_clock::now();
+    BubbleSort(arr, n);
+    auto end = chrono::steady_clock::now();
 
     PrintArray(arr, n);
+    cout << "Elapsed time in milliseconds: " << chrono::duration_cast<chrono::milliseconds>(end-start).count();
+
 
 }
 
