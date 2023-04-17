@@ -9,6 +9,7 @@ void FirstTask();
 //void ThirdTask();
 void BubbleSortIverson(int *num, int size);
 void PrintArray(int *arr, int size);
+void BubbleSort(int *num, int size);
 
 int main()
 {
@@ -50,6 +51,7 @@ void FirstTask()
 
     auto start = chrono::steady_clock::now();
     BubbleSortIverson(arr, n);
+    //BubbleSort(arr, n);
     auto end = chrono::steady_clock::now();
     PrintArray(arr, n);
     cout << "Elapsed time in milliseconds: " << endl;
@@ -59,23 +61,44 @@ void FirstTask()
 
 void BubbleSortIverson(int *num, int size)
 {
-    //int k = 0;
+
     for (int i = 0; i < size - 1; i++)
     {
-        //k = 0;
-        for (int j = (size - 1); j > i; j--)
+        bool flag = true;
+
+        for (int j = 0; j < size - (i + 1); j++)
         {
-            if (num[j - 1] > num[j])
+            if (num[j] > num[j + 1])
             {
-                int temp = num[j - 1];
-                num[j - 1] = num[j];
-                num[j] = temp;
-                //k = 1;
+                flag = false;
+                swap(num[j], num[j + 1]);
             }
-            //if (k==0) return 0;
+        }
+        if (flag)
+        {
+            break;
         }
     }
 }
+
+
+void BubbleSort(int *num, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size - 1; j++)
+        {
+            if (num[j] > num[j + 1])
+            {
+                int b = num[j];
+                num[j] = num[j + 1];
+                num[j + 1] = b;
+            }
+        }
+    }
+}
+
+
 
 void PrintArray(int *arr, int size)
 {
