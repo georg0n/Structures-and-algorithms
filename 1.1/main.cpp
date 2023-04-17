@@ -46,7 +46,7 @@ void MainTask()
     cin >> sw;
     switch (sw) {
     case 1:
-        srand(time(NULL)); // заполненение массива случайными значениями
+        srand(time(NULL)); // random
         for (int i = 0; i < mass; i++) {
             int num = rand() % 20 + 1;
             arr1[i] = num;
@@ -54,7 +54,7 @@ void MainTask()
         }
         break;
     case 2:
-        for (int i = 0; i < mass; i++) { // заполнение массива вручную
+        for (int i = 0; i < mass; i++) {
             int input;
             cout << "arr[" << i << "] = ";
             cin >> input;
@@ -86,7 +86,6 @@ void delFirstMetod(int* x, int n, int key)
         comparison += 1;
         if (x[i] == key)
         {
-            //удаление
             for (int j = i; j <= n - 1; j++)
             {
                 x[j] = x[j + 1];
@@ -120,11 +119,11 @@ void delOtherMetod(int* x, int n, int key)
         comparison++;
         if (x[i] != key)
         {
-            i++;
+            j++;
         }
     }
     n = j;
-    copy(x, c_len, n);
+    //copy(x, c_len, n);
     cout << "Spent permutations on the second method: " << permutation << "| Comparisons have been made: " << comparison << endl;
     int t2 = clock();
     int final_time = t2 - t1;
@@ -144,18 +143,18 @@ void print_arr(int* mass, int len, string name)
 
 void copy(int* tocopy, int copy_len, int final_len)
 {
-    int* temparr = new int[copy_len]; // массив куда мы копируем данные
+    int* old_arr = new int[copy_len];
     for (int i = 0; i < copy_len; i++)
     {
-        temparr[i] = tocopy[i];
+        old_arr[i] = tocopy[i];
     }
-    int* copy = new int[final_len];
+    int* new_arr = new int[final_len];
     for (int i = 0; i < final_len; i++)
     {
-        copy[i] = temparr[i];
+        new_arr[i] = old_arr[i];
     }
-    delete[]temparr;
-    print_arr(copy, final_len, "");
+    delete[]old_arr;
+    print_arr(new_arr, final_len, "");
 }
 
 
