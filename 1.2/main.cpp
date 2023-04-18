@@ -4,17 +4,19 @@
 
 //void Test();
 
-void FirstTask();
-void SecondTask();
-void ThirdTask();
+
+
 
 void PrintArray(int *arr, int size);
 
+
+void BubbleSortTask(int n);
 void BubbleSort(int *num, int size);
 
+void InsertionSortTask(int n);
 void InsertionSort(int *num, int size);
 
-void Reverse(int *num, int size);
+
 
 
 void ReversedBubble(int *num, int size);
@@ -25,19 +27,21 @@ using namespace std;
 
 int main()
 {
+    int n;
+    cout << "Insert count of elements: " << endl;
+    cin >> n;
+
+
     int a;
-    cout << "Print number of task(1-3): " << endl;
+    cout << "Change sort:\n1 - BubbleSort\n2 - InsertionSort" << endl;
 
     cin >> a;
     switch (a) {
         case 1:
-            FirstTask();
+            BubbleSortTask(n);
             break;
         case 2:
-            SecondTask();
-            break;
-        case 3:
-            ThirdTask();
+            InsertionSortTask(n);
             break;
         default:
             cout << "Error" << endl;
@@ -50,14 +54,13 @@ int main()
 
 
 
-void FirstTask()
+void BubbleSortTask(int n)
 {
 
-    int n; // count of elements
-
-    cout << "Insert count of arr elements: " << endl;
-    cin >> n;
     int* arr = new int[n];
+    int changeMode;
+
+
 
     srand(time(NULL)); // randomize
     for (int i = 0; i < n; i++)
@@ -65,6 +68,21 @@ void FirstTask()
         int num = rand() % n + 1;
         arr[i] = num;
     }
+
+    cout << "Change mode:\n1 - Reverse arr;\n2 - Sort arr;\n0 - Do nothing" << endl;
+    cin >> changeMode;
+    switch (changeMode) {
+        case 1:
+            ReversedBubble(arr, n);
+            break;
+        case 2:
+            BubbleSort(arr, n);
+            break;
+        case 0:
+            break;
+    }
+
+
         auto start = chrono::steady_clock::now();
         BubbleSort(arr, n);
         auto end = chrono::steady_clock::now();
@@ -101,16 +119,13 @@ void PrintArray(int *arr, int size)
 
 }
 
-void SecondTask()
+
+
+void InsertionSortTask(int n)
 {
-    int n;
-    int sort;
-    int choice;
 
-    cout << "Insert count of elements: " << endl;
-    cin >> n;
+    int changeMode;
     int* arr = new int[n];
-
 
     srand(time(NULL));
     for (int i = 0; i < n; i++)
@@ -119,33 +134,17 @@ void SecondTask()
         arr[i] = num;
     }
 
-
-    BubbleSort(arr, n);
-    //ReversedBubble(arr, n);
-
-
-    auto start= chrono::steady_clock::now();
-    BubbleSort(arr, n);
-    auto end = chrono::steady_clock::now();
-
-    PrintArray(arr, n);
-    cout << "Elapsed time in milliseconds: " << chrono::duration_cast<chrono::milliseconds>(end-start).count();
-
-
-}
-
-void ThirdTask()
-{
-    int n;
-    cout << "Insert count of elements: " << endl;
-    cin >> n;
-    int* arr = new int[n];
-
-    srand(time(NULL));
-    for (int i = 0; i < n; i++)
-    {
-        int num = rand() % n + 1;
-        arr[i] = num;
+    cout << "Change mode:\n1 - Reverse arr;\n2 - Sort arr;\n0 - Do nothing" << endl;
+    cin >> changeMode;
+    switch (changeMode) {
+        case 1:
+            ReversedBubble(arr, n);
+            break;
+        case 2:
+            BubbleSort(arr, n);
+            break;
+        case 0:
+            break;
     }
 
 
@@ -183,17 +182,7 @@ void InsertionSort(int *num, int size)
 
 }
 
-void Reverse(int *num, int size)
-{
-    int i, b;
 
-    for (i = 0; i < size/2; i++)
-    {
-        b = num[i];
-        num[i] = num[size-i-1];
-        num[size-i-1] = b;
-    }
-}
 
 void ReversedBubble(int *num, int size)
 {
