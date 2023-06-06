@@ -2,21 +2,14 @@
 #include <ctime>
 #include <chrono>
 
-//void Test();
-
-
-
 
 void PrintArray(int *arr, int size);
 
 
 void BubbleSortTask(int n);
 void BubbleSort(int *num, int size);
-
 void InsertionSortTask(int n);
 void InsertionSort(int *num, int size);
-
-
 
 
 void ReversedBubble(int *num, int size);

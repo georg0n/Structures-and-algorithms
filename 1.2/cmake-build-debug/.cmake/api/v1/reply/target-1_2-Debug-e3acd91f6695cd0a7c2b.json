@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "1_2.exe"
-		},
-		{
-			"path" : "1_2.pdb"
+			"path" : "1_2"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +35,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics"
+				},
+				{
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"language" : "CXX",
@@ -68,16 +68,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "1_2",
-	"nameOnDisk" : "1_2.exe",
+	"nameOnDisk" : "1_2",
 	"paths" : 
 	{
 		"build" : ".",
